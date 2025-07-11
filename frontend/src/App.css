@@ -1,0 +1,131 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.landingPageContainer {
+  width: 100vw;
+  height: 100vh;
+  background: url("/public/background.png") no-repeat center center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.brandTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.highlight {
+  color: #FF9839;
+}
+
+.navList {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navBtn, .loginBtn {
+  padding: 0.6rem 1.2rem;
+  background-color: transparent;
+  border: 2px solid #FF9839;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.navBtn:hover, .loginBtn:hover {
+  background-color: #FF9839;
+  color: white;
+}
+
+/* Main Landing Content */
+.landingMainContainer {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+}
+
+.landingText {
+  max-width: 50%;
+}
+
+.landingText h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.subheading {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  color: #ddd;
+}
+
+.getStartedWrapper {
+  margin-top: 2rem;
+}
+
+.getStartedBtn {
+  padding: 0.9rem 2rem;
+  background-color: #D97500;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.getStartedBtn:hover {
+  background-color: #ff9839;
+}
+
+/* Right Section Image */
+.landingImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landingImg {
+  height: 70vh;
+  width: auto;
+  max-width: 100%;
+}
+
+/* Responsive (optional) */
+@media screen and (max-width: 768px) {
+  .landingMainContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .landingText {
+    max-width: 100%;
+  }
+
+  .landingImg {
+    height: 40vh;
+    margin-top: 2rem;
+  }
+}
